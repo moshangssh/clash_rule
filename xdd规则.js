@@ -83,14 +83,6 @@ function main(config) {
     config['rule-providers'] = {};
   }
   config["rule-providers"] = Object.assign(config["rule-providers"], {
-    private: {
-      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml",
-      path: "./ruleset/private.yaml",
-      behavior: "domain",
-      interval: 86400,
-      format: "yaml",
-      type: "http",
-    },
     cn_domain: {
       url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml",
       path: "./ruleset/cn_domain.yaml",
@@ -119,6 +111,15 @@ function main(config) {
       url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml",
       path: "./ruleset/geolocation-!cn.yaml",
       behavior: "domain",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
+
+    private_ip: {
+      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.yaml",
+      path: "./ruleset/private.yaml",
+      behavior: "ipcidr",
       interval: 86400,
       format: "yaml",
       type: "http",
@@ -200,7 +201,7 @@ function main(config) {
     "IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
     "DOMAIN-SUFFIX,oaifree.com,DIRECT",
     "DOMAIN-KEYWORD,adobe,REJECT",
-    "RULE-SET,private,DIRECT",
+    "RULE-SET,private_ip,DIRECT,no-resolve",
     "RULE-SET,ciciai,AIGC",
     "RULE-SET,bing,AIGC",
     "RULE-SET,copilot,AIGC",
