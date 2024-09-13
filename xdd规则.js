@@ -208,7 +208,6 @@ function main(config) {
     "RULE-SET,bard,AIGC",
     "RULE-SET,openai,AIGC",
     "RULE-SET,claude,AIGC",
-    "RULE-SET,steam,PROXY",
     "RULE-SET,telegram_domain,Telegram",
     "RULE-SET,telegram_ip,Telegram,no-resolve",
     "RULE-SET,google_domain,Google",
