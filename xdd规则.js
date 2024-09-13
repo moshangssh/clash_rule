@@ -197,6 +197,9 @@ function main(config) {
   });
 
   config["rules"] = [
+    "IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
+    "DOMAIN-SUFFIX,oaifree.com,DIRECT",
+    "DOMAIN-KEYWORD,adobe,REJECT",
     "RULE-SET,private,DIRECT",
     "RULE-SET,ciciai,AIGC",
     "RULE-SET,bing,AIGC",
