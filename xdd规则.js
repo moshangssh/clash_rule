@@ -187,18 +187,18 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-    steam: {
-      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml",
-      path: "./ruleset/steam.yaml",
+    ciciai: {
+      url: "https://raw.githubusercontent.com/szkane/ClashRuleSet/main/Clash/Ruleset/CiciAi.list",
       behavior: "classical",
       interval: 86400,
-      format: "yaml",
+      format: "text",
       type: "http",
     },
   });
 
   config["rules"] = [
     "RULE-SET,private,DIRECT",
+    "RULE-SET,ciciai,AIGC",
     "RULE-SET,bing,AIGC",
     "RULE-SET,copilot,AIGC",
     "RULE-SET,bard,AIGC",
@@ -206,12 +206,12 @@ function main(config) {
     "RULE-SET,claude,AIGC",
     "RULE-SET,steam,PROXY",
     "RULE-SET,telegram_domain,Telegram",
-    "RULE-SET,telegram_ip,Telegram",
+    "RULE-SET,telegram_ip,Telegram,no-resolve",
     "RULE-SET,google_domain,Google",
-    "RULE-SET,google_ip,Google",
+    "RULE-SET,google_ip,Google,no-resolve",
     "RULE-SET,geolocation-!cn,PROXY",
     "RULE-SET,cn_domain,DIRECT",
-    "RULE-SET,cn_ip,DIRECT",
+    "RULE-SET,cn_ip,DIRECT,no-resolve",
     "MATCH,PROXY",
   ];
   return config;
