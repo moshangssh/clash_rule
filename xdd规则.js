@@ -107,7 +107,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-    geolocation-!cn: {
+    "geolocation-!cn": {
       url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.yaml",
       path: "./ruleset/geolocation-!cn.yaml",
       behavior: "domain",
@@ -115,6 +115,7 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
+
 
     private_ip: {
       url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.yaml",
