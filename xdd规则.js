@@ -207,7 +207,7 @@ function main(config) {
     "RULE-SET,copilot,AIGC",
     "RULE-SET,openai,AIGC",
     "RULE-SET,claude,AIGC",
-    "RULE-SET,github_domain,PROXY"
+    "RULE-SET,github_domain,PROXY",
     "RULE-SET,telegram_domain,Telegram",
     "RULE-SET,telegram_ip,Telegram,no-resolve",
     "RULE-SET,google_domain,Google",
