@@ -173,14 +173,6 @@ function main(config) {
       format: "yaml",
       type: "http",
     },
-    bard: {
-      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BardAI/BardAI.yaml",
-      path: "./ruleset/bard.yaml",
-      behavior: "classical",
-      interval: 86400,
-      format: "yaml",
-      type: "http",
-    },
     openai: {
       url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml",
       path: "./ruleset/openai.yaml",
@@ -196,6 +188,13 @@ function main(config) {
       format: "text",
       type: "http",
     },
+    github_domain: {
+      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.yaml",
+      behavior: "domain",
+      interval: 86400,
+      format: "yaml",
+      type: "http",
+    },
   });
 
   config["rules"] = [
@@ -206,9 +205,9 @@ function main(config) {
     "RULE-SET,ciciai,AIGC",
     "RULE-SET,bing,AIGC",
     "RULE-SET,copilot,AIGC",
-    "RULE-SET,bard,AIGC",
     "RULE-SET,openai,AIGC",
     "RULE-SET,claude,AIGC",
+    "RULE-SET,github_domain,PROXY"
     "RULE-SET,telegram_domain,Telegram",
     "RULE-SET,telegram_ip,Telegram,no-resolve",
     "RULE-SET,google_domain,Google",
