@@ -148,10 +148,10 @@ function main(config) {
       type: "http",
     },
     bing: {
-      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml",
-      behavior: "classical",
+      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bing.mrs",
+      behavior: "domain",
       interval: 86400,
-      format: "yaml",
+      format: "mrs",
       type: "http",
     },
     copilot: {
@@ -162,17 +162,17 @@ function main(config) {
       type: "http",
     },
     claude: {
-      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml",
-      behavior: "classical",
+      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/anthropic.mrs",
+      behavior: "domain",
       interval: 86400,
-      format: "yaml",
+      format: "mrs",
       type: "http",
     },
     openai: {
-      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml",
+      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/openai.mrs",
       behavior: "classical",
       interval: 86400,
-      format: "yaml",
+      format: "mrs",
       type: "http",
     },
     ciciai: {
@@ -183,7 +183,7 @@ function main(config) {
       type: "http",
     },
     github_domain: {
-      url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.mrs",
+      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.mrs",
       behavior: "domain",
       interval: 86400,
       format: "mrs",
