@@ -170,7 +170,7 @@ function main(config) {
     },
     openai: {
       url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/openai.mrs",
-      behavior: "classical",
+      behavior: "domain",
       interval: 86400,
       format: "mrs",
       type: "http",
