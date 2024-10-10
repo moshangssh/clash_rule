@@ -194,7 +194,6 @@ function main(config) {
   config["rules"] = [
     "IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
     "DOMAIN-SUFFIX,oaifree.com,DIRECT",
-    "DOMAIN-KEYWORD,adobe,REJECT",
     "RULE-SET,private_ip,DIRECT,no-resolve",
     "RULE-SET,ciciai,AIGC",
     "RULE-SET,bing,AIGC",
