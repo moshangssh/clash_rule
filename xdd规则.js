@@ -84,7 +84,7 @@ function main(config) {
   }
   config["rule-providers"] = Object.assign(config["rule-providers"], {
     ads: {
-      url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ads.mrs",
+      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads.mrs",
       behavior: "domain",
       interval: 86400,
       format: "mrs",
