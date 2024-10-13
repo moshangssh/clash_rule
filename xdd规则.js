@@ -83,6 +83,13 @@ function main(config) {
     config['rule-providers'] = {};
   }
   config["rule-providers"] = Object.assign(config["rule-providers"], {
+    ads: {
+      url: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ads.mrs",
+      behavior: "domain",
+      interval: 86400,
+      format: "mrs",
+      type: "http",
+    },
     cn_domain: {
       url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs",
       behavior: "domain",
@@ -192,6 +199,7 @@ function main(config) {
   });
 
   config["rules"] = [
+    "RULE-SET,ads,REJECT"
     "IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
     "DOMAIN-SUFFIX,oaifree.com,DIRECT",
     "RULE-SET,private_ip,DIRECT,no-resolve",
