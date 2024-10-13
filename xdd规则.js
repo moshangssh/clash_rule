@@ -199,7 +199,7 @@ function main(config) {
   });
 
   config["rules"] = [
-    "RULE-SET,ads,REJECT"
+    "RULE-SET,ads,REJECT",
     "IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
     "DOMAIN-SUFFIX,oaifree.com,DIRECT",
     "RULE-SET,private_ip,DIRECT,no-resolve",
