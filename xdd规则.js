@@ -91,7 +91,7 @@ function main(config) {
       type: "http",
     },
     cn_domain: {
-      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs",
+      url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.mrs",
       behavior: "domain",
       interval: 86400,
       format: "mrs",
