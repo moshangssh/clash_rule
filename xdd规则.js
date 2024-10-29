@@ -203,6 +203,7 @@ function main(config) {
     "IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
     "DOMAIN-SUFFIX,oaifree.com,DIRECT",
     "RULE-SET,private_ip,DIRECT,no-resolve",
+    "DOMAIN-SUFFIX,cursor.sh,AIGC",
     "RULE-SET,ciciai,AIGC",
     "RULE-SET,bing,AIGC",
     "RULE-SET,copilot,AIGC",
